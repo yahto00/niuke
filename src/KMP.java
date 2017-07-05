@@ -1,5 +1,6 @@
 /**
  * Created by yahto on 16/06/2017.
+ * KMP字符串str1是否为str2子串
  */
 public class KMP {
     public static boolean hasSubString(String originStr, String subString) {
