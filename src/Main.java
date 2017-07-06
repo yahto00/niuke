@@ -5,7 +5,7 @@ import java.util.*;
  */
 public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
         ArrayList<Integer> _ids = new ArrayList<Integer>();
         ArrayList<Integer> _parents = new ArrayList<Integer>();
