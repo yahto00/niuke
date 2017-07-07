@@ -1,3 +1,9 @@
+import com.google.common.collect.FluentIterable;
+import com.google.common.io.Files;
+import org.apache.commons.codec.digest.DigestUtils;
+
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.*;
 
 /**
@@ -5,7 +11,7 @@ import java.util.*;
  */
 public class Main {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
         ArrayList<Integer> _ids = new ArrayList<Integer>();
         ArrayList<Integer> _parents = new ArrayList<Integer>();
@@ -72,4 +78,24 @@ public class Main {
         }
         return maxValue;
     }
+//    public static void main(String[] args) {
+//        System.out.println(md5ByFiles("/Users/yantong/Learning/Tomcat_9.0/webapps/mcg"));
+//    }
+//
+//    public static String md5ByFiles(String path) {
+//        String mdCode = null;
+//        FluentIterable<File> iterable = Files.fileTreeTraverser().breadthFirstTraversal(new File(path));
+//        try {
+//            StringBuilder sb = new StringBuilder();
+//            for (File file : iterable) {
+//                if (!file.isDirectory() && !"data".equals(file.getParentFile().getName()) && !"lib".equals(file.getParentFile().getName())) {
+//                    sb.append(DigestUtils.md5Hex(new FileInputStream(file)));
+//                }
+//            }
+//            mdCode = sb.toString();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return mdCode;
+//    }
 }
